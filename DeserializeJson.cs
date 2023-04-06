@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace VisualizadorDeCameras
 {
-    internal class Requests
+    internal class DeserializeJson
     {
         public List<Camera> cameraList { get;}
 
-        public Requests()
+        public DeserializeJson()
         {
             cameraList =  GetCameras();
         }

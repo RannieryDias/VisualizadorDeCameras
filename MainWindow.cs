@@ -2,7 +2,7 @@ namespace VisualizadorDeCameras
 {
     public partial class MainWindow : Form
     {
-        Requests requests;
+        DeserializeJson requests;
 
         public MainWindow()
         {
@@ -15,7 +15,7 @@ namespace VisualizadorDeCameras
             List<Camera> cameras;
             if (requests == null)
             {
-                requests = new Requests();
+                requests = new DeserializeJson();
                 cameras = requests.GetCameras();
             }
             else
