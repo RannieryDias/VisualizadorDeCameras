@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug/net7.0-windows/json/cameras.json
+/json/cameras.json
+/.vs
+/obj
+/bin/Debug/net7.0-windows
