@@ -1,33 +1,33 @@
+using VisualizadorDeCameras.Model;
+using VisualizadorDeCameras.Util;
+
 namespace VisualizadorDeCameras
 {
     public partial class MainWindow : Form
     {
-        DeserializeJson requests;
+        List<Camera> cameras;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-
         private void RequestBtn_Click(object sender, EventArgs e)
         {
-            List<Camera> cameras;
-            if (requests == null)
-            {
-                requests = new DeserializeJson();
-                cameras = requests.GetCameras();
-            }
-            else
-            {
-                cameras = requests.GetCameras();
-            }
+            cameras ??= DeserializeJson.GetCameras();
+
+            ImageContainerFlowLayout.Controls.Clear();
 
             foreach (Camera cam in cameras)
             {
                 ImageContainer image = new ImageContainer(cam.Url, cam.Number);
+                image.Click += Image_Click;
                 ImageContainerFlowLayout.Controls.Add(image);
             }
+        }
+
+        private void Image_Click(object? sender, EventArgs e)
+        {
         }
     }
 }

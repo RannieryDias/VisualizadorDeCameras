@@ -11,11 +11,6 @@
             InitializeComponent();
         }
 
-        private void ImageContainer_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void ImageContainer_MouseEnter(object sender, EventArgs e)
         {
             this.BackColor = SystemColors.Highlight;

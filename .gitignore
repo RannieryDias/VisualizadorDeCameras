@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/bin/Debug/net7.0-windows/json/cameras.json
-/json/cameras.json
-/.vs
+/json
 /obj
-/bin/Debug/net7.0-windows
+/.vs
+/bin
+/Properties/PublishProfiles
