@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/json
-/obj
-/.vs
-/bin
 /Properties/PublishProfiles
+/obj
+/json
+/bin
+/.vs

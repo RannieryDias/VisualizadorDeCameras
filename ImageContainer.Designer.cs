@@ -75,7 +75,7 @@
 
         #endregion
 
-        private PictureBox image;
+        public PictureBox image;
         private Label imageLabel;
     }
 }

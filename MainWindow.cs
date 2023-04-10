@@ -28,6 +28,18 @@ namespace VisualizadorDeCameras
 
         private void Image_Click(object? sender, EventArgs e)
         {
+            var selectedCamera = sender as ImageContainer;
+
+
+            if (selectedCamera != null)
+            {
+                Form popUp = new Form 
+                {
+                    Text = selectedCamera.Name,
+                };
+                popUp.Controls.Add(selectedCamera.image);
+                popUp.ShowDialog();
+            }
         }
     }
 }
